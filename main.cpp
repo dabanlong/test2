@@ -859,10 +859,16 @@ static QVariantList get_TZ_list(bool fuck)
     return retList;
 }
 
+int do_magic(int n)
+{
+    if(n==42)
+        return 42;
+    return n*2;
+}
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    qDebug()<<"AAAAAAAAAAAAAAAAAA";
+    qDebug()<<"AAAAAAAAAAAAAAAAAA"<<do_magic(2);
     return app.exec();
 }

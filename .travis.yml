@@ -1,7 +1,22 @@
 language: cpp
 compiler: gcc
 
+before_install:
+    - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
+    - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+
+before_script:
+    - "export DISPLAY=:99.0"
+    - "sh -e /etc/init.d/xvfb start"
+    - sleep 3 # give xvfb some time to start
+
 script:
     - qmake
     - make
     - ./test9
+    - codecov
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
