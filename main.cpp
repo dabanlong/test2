@@ -15,7 +15,6 @@
 #include <QMdiArea>
 #include <QMdiSubWindow>
 #include <QMessageBox>
-#include <QOpenGLContext>
 #include <QPushButton>
 #include <QSlider>
 #include <QSpinBox>
