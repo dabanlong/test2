@@ -4,7 +4,7 @@ DEFINES += \
 
 QT += core gui widgets concurrent opengl
 
-CONFIG += debug 
+CONFIG += debug c++14
 
 HEADERS += test9.h \
 
