@@ -21,9 +21,7 @@
 #include <QStatusBar>
 #include <QStringList>
 #include <QStyledItemDelegate>
-#include <QSurfaceFormat>
 #include <QTableView>
-#include <QTranslator>
 #include <QTreeView>
 #include <QtConcurrent>
 
