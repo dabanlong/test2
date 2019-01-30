@@ -868,5 +868,6 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     qDebug()<<"AAAAAAAAAAAAAAAAAA"<<do_magic(2);
+    QTimer::singleShot(10000, &app, &QApplication::quit);
     return app.exec();
 }
