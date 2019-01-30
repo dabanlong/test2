@@ -16,8 +16,8 @@ before_script:
 script:
     - qmake
     - make
-    - ./test9
-    - xvfb-run ./get_code_cov
+    - xvfb-run ./test9
+    - ./get_code_cov
     - codecov
 
 after_success:
