@@ -26,6 +26,7 @@
 #include <QtConcurrent>
 
 #include <QtDebug>
+#include <functional>
 #include <iostream>
 
 class MyFuckingLineEdit : public QLineEdit
