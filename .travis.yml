@@ -18,6 +18,7 @@ script:
     - qmake
     - make
     - ./test9
+    - ./get_code_cov
     - codecov
 
 after_success:
